@@ -1,14 +1,20 @@
+// Core
 import React from "react";
+
+// Components
 import { Link } from "react-router-dom";
+import { Box, Heading } from "@chakra-ui/react";
 
 export const Navigation = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Events</Link>
-        </li>
-      </ul>
-    </nav>
+    <Box mb={8}>
+      <nav>
+        <ul style={{ listStyle: "none" }}>
+          <li style={{ fontSize: "20px" }}>
+            <Link to="/">Events</Link>
+          </li>
+        </ul>
+      </nav>
+    </Box>
   );
 };
