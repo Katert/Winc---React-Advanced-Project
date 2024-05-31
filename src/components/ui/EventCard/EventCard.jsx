@@ -7,24 +7,18 @@ import {
   Image,
   Text,
   Stack,
-  Button,
 } from "@chakra-ui/react";
 import { NavigateButton } from "../../input";
 
 // Utils
 import { getDateData } from "../../../utils";
 
-// Hooks
-import { useNavigate } from "react-router-dom";
-
 export const EventCard = ({
   id,
-  createdBy,
   title,
   description,
   image,
   categoryNames,
-  location,
   startTime,
   endTime,
 }) => {

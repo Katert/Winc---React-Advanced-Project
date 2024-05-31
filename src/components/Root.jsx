@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { Navigation } from "./Navigation";
-import { Box, Container, Center } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
 
 export const Root = () => {
   return (

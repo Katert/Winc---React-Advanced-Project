@@ -1,3 +1,4 @@
+// Core
 import React, { createContext, useState, useEffect, useContext } from "react";
 
 const EventsContext = createContext();
@@ -61,13 +62,13 @@ export const EventsProvider = ({ children }) => {
         const index = events.findIndex((event) => event.id === updatedEvent.id);
         const newEvents = [...events];
         newEvents[index] = updatedEvent;
-        setEvents(newEvents); // Update the local state
+        setEvents(newEvents);
       } else {
         throw new Error("Failed to update the event on the server");
       }
     } catch (error) {
       setError(error);
-      throw error; // Rethrow the error to handle it in the calling component if needed
+      throw error;
     }
   };
 
